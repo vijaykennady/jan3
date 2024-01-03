@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="list-group align-items-center mt-5">
+        <li class="list-group-item p-1 bg-success" *ngFor="let tli of getAllDetails; let i = index">{{tli.work}}
+            <button type="button" class="btn btn-info" (click)="goEdit(tli.id)">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="deleteDetails(tli.id)">Delete</button>
+        </li>
+    </ul>
+
+    <div class="d-flex justify-content-center mt-3">
+        <button type="button" class="btn btn-primary" (click)="home()">Back</button>
+    </div>
+</div>
